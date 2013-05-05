@@ -11,23 +11,24 @@
 * place images in a folder of your choice.
 * make sure the path is correct in index.php ($imagesPath)
 - images have to be named:
-```html
+```
 01.jpg, 02.jpg etc.
 ```
 * call
-```js
+```
 $('img').imgBubble();
 ```
 
 ## Options
 
 * for now, there are two:
-imgClass for the class of your images
-navWrapper for the nav Items placeholder.
+* ```imgClass``` for the class of your images
+* ```navWrapper``` for the nav Items placeholder.
 defaults:
+```
     $('img').imgBubble({
         'imgClass': '.imgbubble',
         'navWrapper': '#imgBubble_nav'
     });
-
+```
 
