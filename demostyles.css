@@ -1,0 +1,31 @@
+
+
+#img_nav{
+   width:100%;
+}
+
+
+.linkwrap {
+    color: #4c5254;
+    width: 16px;
+    height: 20px;
+    margin: 0 1px 10px 0;
+    float: left;
+    cursor: pointer;
+    padding: 0 3px 4px 0;
+    z-index: 9999;
+}
+
+.imgbubble {
+    display: none;
+    float:left;
+}
+#img_wrapper{
+
+}
+
+#img_wrapper, #img_nav{
+    width:75%;
+    margin:0 auto;
+
+}

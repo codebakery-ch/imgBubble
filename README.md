@@ -21,7 +21,7 @@ $('img').imgBubble();
 
 ## Options
 
-* for now, there are two:
+for now, there are two:
 * ```imgClass``` for the class of your images
 * ```navWrapper``` for the nav Items placeholder.
 defaults:
@@ -31,4 +31,3 @@ defaults:
         'navWrapper': '#imgBubble_nav'
     });
 ```
-

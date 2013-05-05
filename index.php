@@ -4,7 +4,7 @@ require('images.php');
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <title>imgBubble Jquery Plugin</title>
     <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="http://code.jquery.com/jquery-migrate-1.1.1.min.js"></script>
     <script src="imgBubble.js"></script>
@@ -15,21 +15,19 @@ require('images.php');
             });
         })
     </script>
-    <style>
-        .imgbubble {
-            display: none;
-        }
-    </style>
+    <link rel="stylesheet" href="demostyles.css"/>
 </head>
 <body>
-<?php
+<div id="img_nav"></div>
+<div id="img_wrapper">
+    <?php
     //include path here
     $imagesPath = 'images';
     $imagesArray = imgBubble::generateImages($imagesPath);
     foreach ($imagesArray as $image) {
         echo $image['file'];
     }
-?>
-<div id="img_nav"></div>
+    ?>
+</div>
 </body>
 </html>
