@@ -2,8 +2,10 @@
     $.fn.imgBubble = function (options) {
         var settings = $.extend({
             'imgClass': '.imgbubble',
-            'navWrapper': '#imgBubble_nav'
+            'navWrapper': '#imgBubble_nav',
+            'imageWrapper': '#img_wrapper'
         }, options);
+        $(settings.imageWrapper).find('img').addClass(settings.imgClass.replace('.',''));
         var i = 0;
         this.each(function () {
             i++;
@@ -12,12 +14,12 @@
             menuItem.appendTo($(settings.navWrapper));
         });
         var first = 1;
-        $('.imgbubble[rel=' + first + ']').show();
+        $(settings.imgClass+'[rel=' + first + ']').show();
         return $(settings.navWrapper).find('.linkwrap a').click(onClick)
         function onClick() {
             var field = $(this).attr('rel');
             $(settings.imgClass).hide();
-            $('.imgbubble[rel=' + field + ']').show();
+            $(settings.imgClass+'[rel=' + field + ']').show();
         }
     };
 })(jQuery);

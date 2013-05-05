@@ -8,7 +8,7 @@ class imgBubble
         foreach (glob($path.'/*.jpg') as $filename) {
             $count++;
             $images[] = array(
-                "file" => '<img src="' . $filename . '" class="imgbubble" rel="' . $count . '" />',
+                "file" => '<img src="' . $filename . '" class="" rel="' . $count . '" />',
             );
         }
         return $images;

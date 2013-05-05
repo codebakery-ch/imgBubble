@@ -6,6 +6,8 @@
 * It also takes care of ordering the images the right way.
 * The navigation Items can be used to show/hide the images, or you can build your custom functions. Its a starter.
 
+** THIS THING IS NOWHERE FINISHED (YET) **
+
 ## Usage
 
 * place images in a folder of your choice.
@@ -24,10 +26,12 @@ $('img').imgBubble();
 for now, there are two:
 * ```imgClass``` for the class of your images
 * ```navWrapper``` for the nav Items placeholder.
+* ```imageWrapper``` for the images placeholder.
 defaults:
 ```
     $('img').imgBubble({
         'imgClass': '.imgbubble',
-        'navWrapper': '#imgBubble_nav'
+        'navWrapper': '#imgBubble_nav',
+        'imageWrapper': '#images_wrapper'
     });
 ```
